@@ -149,7 +149,7 @@ body, html{
     text-align: center;
 }
 
-.featured .cakeSection .box1, .box2, .box3{
+.featured .cakeSection .box1{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -157,13 +157,13 @@ body, html{
     padding: 1vw;
 }
 .featured .cakeSection .imgContainer{
-    height: 40vh;
+    height: 50vh;
     width: 100%;
 }
 .featured .cakeSection .imgContainer img{
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 .featured .cakeSection h3{
     font-size: 1.5vw;
@@ -172,6 +172,10 @@ body, html{
 }
 .featured .cakeSection p{
     font-size: 1.2vw;
+    margin-top: 2vh;
+}
+.featured .cakeSection h2{
+    margin-top: 2vh;
 }
 .featured .cakeSection button{
     padding: 1vw 2vw;
@@ -180,9 +184,7 @@ body, html{
     border: none;
     background-color: #9c0746;
     color: #fde5ea;
-}
-.box3 .imgContainer{
-    scale: 0.8;
+    margin-top: 3vh;
 }
 .featured .cakeSection button:hover{
     background-color:#fa0068 ;
@@ -193,4 +195,7 @@ body, html{
 }
 .featured .headTag button:hover{
     color: #9c0746;
+}
+.headTag button {
+    transition: opacity 0.3s;
 }
