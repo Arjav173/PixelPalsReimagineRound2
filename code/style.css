@@ -207,7 +207,7 @@ body, html{
     align-items: center;
     flex-direction: column;
     gap: 2vw;
-    margin-bottom: 20vmax;
+    margin-bottom: 7vmax;
     overflow-x: hidden;
 }
 
@@ -215,16 +215,16 @@ body, html{
     margin-top: 3vw;
     font-size: 4vw;
     color: #9c0746;
-    font-family:'Montserrat' ;
 }
 .speciality p{
     width: 35vw;
     text-align: center;
     font-size: 1.2vw;
+    font-weight: 600;
 }
 #speciality_cakeimage{
     position: absolute;
-    transform: translate(100%);
+    transform: translateX(100%);
     height: calc(100% - 25vw);
     display: flex;
     align-items: center;
@@ -232,21 +232,27 @@ body, html{
     gap: 50px;
     margin-top: 2vw;
     padding-bottom: 1vw;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 #speciality_cakeimage img{
     height: 31vmax;
-    width: 43.2vmax;
+    width: 31.2vmax;
     object-fit: cover;
 }
-#Scake2{
+#Scake1{
     object-position: left;
 }
-#Scake4{
-    object-position: left;
+#Scake2{
+    object-position:75%;
 }
 #Scake3{
-    object-position:right;
+    object-position:left ;
+}
+#Scake4{
+    object-position: 5%; 
+}
+#Scake5{
+    object-position:85% ;
 }
 
 #speciality_bottom{
@@ -291,9 +297,89 @@ body, html{
 }
 .USP{
     width: 100vw;
-    height: 80vh;
+    height: 60vh;
     background-color: #fff;
+    padding: 0px 3vw;
+    margin-bottom: 5vmax;
 }
+.main_container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.USP .container1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.innercont1{
+    height: 50%;
+    width: 100%;
+    gap: 2vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 2vw;
+}
+.innercont1 img{
+    height: 10vw;
+    width: 10vw;
+    object-fit: cover;
+}
+.innercont1_content{
+    height: 10vw;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    padding: 1vw 0vw;
+}
+.innercont1_content h4{
+    font-size: 1.7vw;
+    color: #9c0746;
+    font-weight: 900;
+}
+.innercont1_content p{
+    font-size: 1.1vw;
+    font-weight: 700;
+}
+.innercont2{
+    height: 50%;
+    width: 100%;
+    gap: 2vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 2vw;
+}
+.innercont2 img{
+    height: 10vw;
+    width: 10vw;
+    object-fit: cover;
+}
+.innercont2_content{
+    height: 10vw;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    padding: 1vw 0vw;
+}
+.innercont2_content h4{
+    font-size: 1.7vw;
+    color: #9c0746;
+    font-weight: 900;
+}
+.innercont2_content p{
+    font-size: 1.1vw;
+    font-weight: 700;
+}
+.USP .container2{
+    width: 50%;
+    height: 100%;
+}
+
 .reviews{
     height: 80vh;
     width: 100%;
