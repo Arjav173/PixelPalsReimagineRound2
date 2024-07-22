@@ -234,17 +234,23 @@ body, html{
 }
 #speciality_cakeimage img{
     height: 31vmax;
-    width: 43.2vmax;
+    width: 31.2vmax;
     object-fit: cover;
 }
-#Scake2{
+#Scake1{
     object-position: left;
 }
-#Scake4{
-    object-position: left;
+#Scake2{
+    object-position:75%;
 }
 #Scake3{
-    object-position:right;
+    object-position:left ;
+}
+#Scake4{
+    object-position: 5%; 
+}
+#Scake5{
+    object-position:85% ;
 }
 
 #speciality_bottom{
