@@ -89,13 +89,13 @@ changeContent();
 
 gsap.to("#speciality_cakeimage",{
     transform: "translateX(-100%)",
-    duration:5,
+
     scrollTrigger:{
         trigger:".speciality",
         scroller: "body",
         start:"top 0%",
-        end:"top -650%",
-        scrub: 0.4,
+        end:"top -300%",
+        scrub: true,
         pin:true
     }
   })

@@ -200,7 +200,7 @@ body, html{
     transition: opacity 0.3s;
 }
 .speciality{
-    width: 100%;
+    width: 100vw;
     height: 150vh;
     background-color: #fde5ea;
     display: flex;
@@ -208,6 +208,7 @@ body, html{
     flex-direction: column;
     gap: 2vw;
     margin-bottom: 20vmax;
+    overflow-x: hidden;
 }
 
 .speciality h1{
@@ -224,13 +225,14 @@ body, html{
 #speciality_cakeimage{
     position: absolute;
     transform: translate(100%);
-    height: calc(100% - 12.2vw);
+    height: calc(100% - 25vw);
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 50px;
     margin-top: 2vw;
     padding-bottom: 1vw;
+    overflow-x: hidden;
 }
 #speciality_cakeimage img{
     height: 31vmax;
@@ -248,7 +250,7 @@ body, html{
 }
 
 #speciality_bottom{
-    margin-top: 30vw;
+    margin-top: 20vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -277,6 +279,12 @@ body, html{
 }
 #speciality_bottom button:hover{
     background-color: #fa0068;
+}
+#speciality_middle{
+    margin-top: 17vw;
+    color: #fccbd5;
+    font-size: 3vw;
+    font-weight: 200;
 }
 .USP{
     width: 100vw;
