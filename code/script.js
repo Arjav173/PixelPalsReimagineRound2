@@ -87,15 +87,24 @@ setInterval(changeContent, 4000);
 
 changeContent();
 
-gsap.to("#speciality_cakeimage",{
-    transform: "translateX(-100%)",
+const textContent = [
+  "We offer a variety of flavors to satisfy every palate.",
+  "Each cake is handcrafted with love and attention to detail.",
+  "Our cakes are made with the finest ingredients, ensuring a delicious and unforgettable experience.",
+];
 
-    scrollTrigger:{
-        trigger:".speciality",
-        scroller: "body",
-        start:"top 0%",
-        end:"top -300%",
-        scrub: true,
-        pin:true
+gsap.to("#speciality_cakeimage", {
+  x: "-100%",
+  scrollTrigger: {
+    trigger: ".speciality",
+    start: "top 0",
+    end: "top -300%",
+    scrub: true,
+    smooth:0.2,
+    pin: true,
+    onUpdate: (self) => {
+      let index = Math.floor(self.progress * (textContent.length - 1));
+      document.getElementById("speciality_text").textContent = textContent[index];
     }
-  })
+  }
+});
