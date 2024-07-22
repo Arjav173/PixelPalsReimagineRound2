@@ -94,10 +94,10 @@ const textContent = [
 ];
 
 gsap.to("#speciality_cakeimage", {
-  x: "-100%",
+  x: "-78%",
   scrollTrigger: {
     trigger: ".speciality",
-    start: "top 0",
+    start: "top 0%",
     end: "top -300%",
     scrub: true,
     smooth:0.2,
