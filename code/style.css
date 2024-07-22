@@ -67,12 +67,12 @@ body, html{
 .content{
     width: 100%;
     position: relative;
-    height: 90vh;
 }
 
 .content .cake{
     position: absolute;
     width: 40vw;
+    height: 80vh;
     right: -2vw;
     top: 2vh;
 }
@@ -121,6 +121,7 @@ body, html{
 .featured{
     width: 100vw;
     padding: 2vw;
+    margin-bottom: 10vh;
 }
 .featured h1{
     color: #9c0746;
@@ -301,3 +302,118 @@ body, html{
     height: 80vh;
     background-color: #fff;
 }
+.reviews{
+    height: 80vh;
+    width: 100%;
+    background-color: #fff; 
+    margin-bottom: 10vh;
+   
+}
+.reviews h2{
+    margin-top: 5vh;
+    font-size: 4vw;
+    font-weight: 2vh;
+    text-align: center;
+    color: #9c0746;
+}
+.reviewContainer{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+#reviewCard{ 
+    height: 60vh;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2vw;
+}
+#reviewCard #imgContainer {
+    height: 8vw;
+    width: 8vw;
+}
+
+#reviewCard #imgContainer img {
+    height: 100%;
+    width: 8vw;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#reviewCard h1 {
+    margin-top: 2vh;
+    font-size: 3vw;
+    color: #fa0068;
+}
+
+#reviewCard p {
+    text-align: center;
+    margin-top: 3.5vh;
+    font-size: 1.2vw;
+
+}
+
+
+.footer {
+    display: flex;
+    gap: 1vw;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    width: 100vw;
+    background-color: #fccbd5;
+}
+
+#left {
+    height: 100%;
+    padding: 2vh;
+    width: 32vw;
+    font-weight: 800;
+}
+
+ #left h1 {
+     color: #9c0746;
+     font-size: 2vw;
+ }
+
+ #mail {
+     margin-top: 2vw;
+     font-size: 1vw;
+ }
+
+ #contact {
+     margin-top: 2vw;
+ }
+
+ #feedback {
+     margin-top: 2vw;
+ }
+
+ #imagepart {
+    width: 40vw;
+ }
+
+ #imagepart img {
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+ }
+
+ #location {
+     margin-top: 2vw;
+     height: 4vw;
+     font-size: 1vw;
+ }
+
+ #location #icon {
+     font-weight: 200;
+     font-size: 2vw;
+     color: #9c0746;
+ }
+ 
+ 
