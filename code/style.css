@@ -216,16 +216,16 @@ body, html{
     margin-top: 3vw;
     font-size: 4vw;
     color: #9c0746;
-    font-family:'Montserrat' ;
 }
 .speciality p{
     width: 35vw;
     text-align: center;
     font-size: 1.2vw;
+    font-weight: 600;
 }
 #speciality_cakeimage{
     position: absolute;
-    transform: translate(100%);
+    transform: translateX(100%);
     height: calc(100% - 25vw);
     display: flex;
     align-items: center;
@@ -233,7 +233,7 @@ body, html{
     gap: 50px;
     margin-top: 2vw;
     padding-bottom: 1vw;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 #speciality_cakeimage img{
     height: 31vmax;

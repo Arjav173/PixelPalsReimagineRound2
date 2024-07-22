@@ -90,7 +90,7 @@ changeContent();
 const textContent = [
   "We offer a variety of flavors to satisfy every palate.",
   "Each cake is handcrafted with love and attention to detail.",
-  "Our cakes are made with the finest ingredients, ensuring a delicious and unforgettable experience.",
+  "Our cakes are made with the finest ingredients, ensuring a delicious and unforgettable experience."
 ];
 
 gsap.to("#speciality_cakeimage", {
