@@ -17,7 +17,7 @@ body, html{
 .first{
     width: 100vw;
     background-color: #fde5ea;
-    overflow-x: hidden;
+    overflow: hidden;
     padding-bottom: 8vh;
 }
 .first .nav{
@@ -207,7 +207,7 @@ body, html{
     align-items: center;
     flex-direction: column;
     gap: 2vw;
-    margin-bottom: 20vmax;
+    /* margin-bottom: 20vmax; */
     overflow-x: hidden;
 }
 
@@ -291,8 +291,87 @@ body, html{
 }
 .USP{
     width: 100vw;
-    height: 80vh;
+    height: 60vh;
     background-color: #fff;
+    padding: 0px 3vw;
+    /* margin-bottom: 5vmax; */
+}
+.main_container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.USP .container1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.innercont1{
+    height: 50%;
+    width: 100%;
+    gap: 2vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 2vw;
+}
+.innercont1 img{
+    height: 10vw;
+    width: 10vw;
+    object-fit: cover;
+}
+.innercont1_content{
+    height: 10vw;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    padding: 1vw 0vw;
+}
+.innercont1_content h4{
+    font-size: 1.7vw;
+    color: #9c0746;
+    font-weight: 900;
+}
+.innercont1_content p{
+    font-size: 1.1vw;
+    font-weight: 700;
+}
+.innercont2{
+    height: 50%;
+    width: 100%;
+    gap: 2vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 2vw;
+}
+.innercont2 img{
+    height: 10vw;
+    width: 10vw;
+    object-fit: cover;
+}
+.innercont2_content{
+    height: 10vw;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    padding: 1vw 0vw;
+}
+.innercont2_content h4{
+    font-size: 1.7vw;
+    color: #9c0746;
+    font-weight: 900;
+}
+.innercont2_content p{
+    font-size: 1.1vw;
+    font-weight: 700;
+}
+.USP .container2{
+    width: 50%;
+    height: 100%;
 }
 .reviews{
     height: 80vh;
@@ -401,64 +480,62 @@ body, html{
      height: 4vw;
      font-size: 1vw;
  }
-
-.parent{
+ .parent {
     width: 100%;
     height: 100%;
     background-color: #fff;
-    padding: 40px 30px;
+    padding: 5vh 2.5vw;
 }
-
-.instaPost{
+.instaPost {
     width: 100%;
-    border-radius: 20px;
+    border-radius: 1.041vw;
     background-color: #fde5ea;
+    padding-bottom: 5vh;
 }
 
-.instaPost .heading{
+.instaPost .heading {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 30px;
+    padding: 1.25vh 2.5vw;
 }
 
-.parent .instaPost .heading h2{
+.parent .instaPost .heading h2 {
     font-size: 42px;
-    opacity: 0.85; 
-    font-weight: 600; 
-    letter-spacing: 1px; 
-    color: #333; 
-    margin-top: 20px; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); 
-    padding-bottom: 10px;
+    opacity: 0.85;
+    font-weight: 600;
+    letter-spacing: 0.093vh;
+    color: #333;
+    margin-top: 1.85vh;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    padding-bottom: 1.25vh;
 }
-
 
 .parent .instaPost .heading button {
     background-color: #fde5ea;
     border-radius: 20px;
-    padding: 10px 25px;
+    padding: 1.25vh 1.75vw;
     text-transform: uppercase;
     opacity: 0.5;
     font-size: 16px;
     border: 2px solid #474141;
-    margin-top: 20px;
-    position: relative; 
-    overflow: hidden; 
-    color: #474141; 
-    z-index: 1; 
-    cursor: pointer; 
+    margin-top: 1.85vh;
+    position: relative;
+    overflow: hidden;
+    color: #474141;
+    z-index: 1;
+    cursor: pointer;
 }
 
 .parent .instaPost .heading button::before,
 .parent .instaPost .heading button::after,
 .parent .instaPost .heading button span::before,
 .parent .instaPost .heading button span::after {
-    content: ''; 
-    position: absolute; 
-    transition: all 0.4s ease; 
-    background-color: #ffffff; 
-    z-index: -1; 
+    content: '';
+    position: absolute;
+    transition: all 0.4s ease;
+    background-color: #ffffff;
+    z-index: -1;
 }
 
 .parent .instaPost .heading button::before {
@@ -509,88 +586,97 @@ body, html{
     position: relative;
 }
 
-.parent .instaPost .images{
-    height: 500px;
+.parent .instaPost .images {
+    height: 80vh;
     width: 100%;
-    display: flex;
-    gap: 35px;    
-    padding: 20px 30px;
     overflow: hidden;
+    position: relative;
+}
+
+.parent .instaPost .images .slider {
+    display: flex;
+    width: 100%;
+    gap: 35px;
+    animation: slide 20s linear infinite;
+    
 }
 
 .parent .instaPost .images img {
     height: 100%;
-    width: 100%;
+    width: 30%;
     object-fit: cover;
     border-radius: 20px;
     transition: transform 0.6s ease-in-out;
 }
 
 .parent .instaPost .images img:hover {
+    border-radius: 20px;
     transform: scale(1.05);
 }
 
-.parent .instaPost .divider {
-    width: 85%;
-    border: none;
-    border-bottom: 3px solid #0000006e; 
-    margin: 20px 30px; 
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
-.aboutUs{
+
+.aboutUs {
     width: 100%;
     background-color: #fde5ea;
     border-radius: 20px;
-    margin-top: 50px;
-    padding: 0 30px;
+    margin-top: 6.25vh;
+    padding: 0 2.5vw;
 }
 
 .aboutUs h2 {
     font-size: 42px;
-    opacity: 0.85; 
-    font-weight: 600; 
-    letter-spacing: 1px; 
-    color: #333; 
-    padding-top: 35px; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); 
-    padding-bottom: 10px;
+    opacity: 0.85;
+    font-weight: 600;
+    letter-spacing: 0.093vh;
+    color: #333;
+    padding-top: 3.45vh;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    padding-bottom: 1.25vh;
 }
 
-
-.aboutUs .content{
+.aboutUs .content {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     gap: 50px;
 }
 
-.aboutUs .content img{
-    height: 600px;
+.aboutUs .content img {
+    height: 75vh;
     border-radius: 20px;
 }
+
 .aboutUs .content p {
-    padding-top: 20px;
+    padding-top: 1.85vh;
     font-size: 22px;
-    line-height: 1.6; 
+    line-height: 1.6;
     font-weight: 400;
-    color: #333; 
+    color: #333;
     text-align: justify;
-    margin-bottom: 20px; 
-    letter-spacing: 0.2px; 
-    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.1); 
-    border-left: 4px solid rgba(215, 120, 136, 0.458); 
-    padding-left: 15px; 
+    margin-bottom: 1.85vh;
+    letter-spacing: 0.2px;
+    text-shadow: 0.5px 0.5px 0.093vh rgba(0, 0, 0, 0.1);
+    border-left: 4px solid rgba(215, 120, 136, 0.458);
+    padding-left: 1.25vw;
 }
 
-.aboutUs .content .left{
+.aboutUs .content .left {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
 }
 
 .h3-container {
-    margin-top: 150px;
+    margin-top: 18.75vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -602,27 +688,48 @@ body, html{
     font-weight: 600;
     color: #6e6a6a;
     margin: 0;
-    padding: 15px 0;
-    border-bottom: 1px solid #ccc; 
-    border-bottom: 1px solid #ccc; 
-    transition: color 0.3s ease, opacity 0.3s ease; 
+    padding: 2.5vh 0;
+    border-bottom: 0.093vh solid #ccc;
+    border-bottom: 0.093vh solid #ccc;
+    transition: color 0.3s ease, opacity 0.3s ease;
 }
 
 .h3-container h3:first-child {
-    margin-top: 20px; 
-    border-top: 1px solid #ccc; 
+    margin-top: 1.85vh;
+    border-top: 0.093vh solid #ccc;
 }
 
 .h3-container h3:last-child {
-    border-bottom: none; 
+    border-bottom: none;
 }
 
 .h3-container h3:hover {
-    color: #191919; 
-    opacity: 1; 
+    color: #191919;
+    /*   opacity:1;  */
 }
- 
- @media (max-width:600px) {
+.video{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.video h2{
+    font-size: 3vw;
+    color: #9c0746;
+}
+.videoContainer{
+    margin-top: 4vh;
+    height: 75vh;
+    width: 100%;
+}
+.videoContainer video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+@media (max-width:600px) {
     .nav .logo{
         height: 14vw;
         width: 14vw;

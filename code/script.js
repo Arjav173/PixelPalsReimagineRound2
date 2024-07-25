@@ -1,23 +1,24 @@
 const defaultContent = [
     {
         img: './images/pngegg.png',
-        title: 'Strawberry Cheesecake Slice',
-        description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, eaque.',
-        price: '₹250'
+        title: 'Chocolate Cheesecake Slice',
+        description: 'Rich and creamy chocolate cheesecake topped with dark chocolate ganache.',
+        price: '₹300'
     },
     {
         img: './images/pngegg (1).png',
-        title: 'Strawberry Cheesecake Slice',
-        description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, eaque.',
-        price: '₹250'
+        title: 'Blueberry Cheesecake Slice',
+        description: 'Smooth and tangy cheesecake with a fresh blueberry topping.',
+        price: '₹280'
     },
     {
         img: './images/imageedit_2_4759558312.png',
-        title: 'Strawberry Cheesecake Slice',
-        description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, eaque.',
-        price: '₹250'
+        title: 'Mango Cheesecake Slice',
+        description: 'Delicious mango cheesecake made with ripe, juicy mangoes.',
+        price: '₹270'
     }
 ];
+
 
 const cakes = [
     {
@@ -90,7 +91,7 @@ changeContent();
 const textContent = [
   "We offer a variety of flavors to satisfy every palate.",
   "Each cake is handcrafted with love and attention to detail.",
-  "Our cakes are made with the finest ingredients, ensuring a delicious and unforgettable experience.",
+  "Our cakes are made with the finest ingredients, ensuring a delicious and unforgettable experience."
 ];
 
 gsap.to("#speciality_cakeimage", {
@@ -108,3 +109,4 @@ gsap.to("#speciality_cakeimage", {
     }
   }
 });
+
